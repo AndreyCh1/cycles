@@ -24,7 +24,11 @@
                             $k = "-";
                         }
                         echo ("<tr>");
-                        echo ("<td>Hello $k</td><td>Goodbye $n</td>");
+                        if ($n%5 == 0) {
+                            echo ("");
+                        } else {
+                            echo ("<td>Hello $k</td><td>Goodbye $n</td>");
+                        }
                         echo ("</tr>");
                     }
                     // $a = intval($_POST["options"]);
